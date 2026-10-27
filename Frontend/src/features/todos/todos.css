@@ -1,0 +1,145 @@
+
+.todos-container {
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 4px 20px rgba(148, 163, 184, 0.12);
+    font-family: Arial, sans-serif;
+}
+
+.welcome-title {
+    color: #475569;
+    margin-bottom: 25px;
+}
+
+.add-todo {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.add-todo input {
+    flex: 1;
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid #e2e8f0;
+    border-radius: 7px;
+    background: #fafbff;
+    outline: none;
+}
+
+.add-todo input:focus {
+    border-color: #c4b5fd;
+}
+
+.todos-container button {
+    padding: 11px 18px;
+    border: none;
+    border-radius: 9px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.add-btn {
+    background: #dbeafe;
+    color: #2563a8;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 22px 25px;
+    margin-bottom: 14px;
+    background: #fcfcff;
+    border: 1px solid #f0effa;
+    border-left: 5px solid #d8d5f5;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(148, 163, 184, 0.07);
+}
+
+.todo-item > div:first-child {
+    flex: 1;
+    min-width: 0;
+}
+
+.todo-item > div:first-child b {
+    display: block;
+    color: #475569;
+    font-size: 17px;
+    overflow-wrap: anywhere;
+}
+
+.todo-item > div:first-child > div {
+    margin-top: 5px;
+    color: #b0b8c5;
+    font-size: 11px;
+}
+
+.todo-item > div:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5px;
+    flex-shrink: 0;
+    margin-left: auto;
+}
+
+.delete-btn {
+    background: #fff1f2;
+    color: #e07a85 !important;
+}
+
+.complete-btn {
+    background: #eaf8ee;
+    color: #5aab76 !important;
+}
+
+.done-btn {
+    background: #f1f3f8;
+    color: #8491a5 !important;
+}
+
+.add-btn:hover {
+    background: #c7e0ff;
+}
+
+.delete-btn:hover {
+    background: #ffe1e5;
+}
+
+.complete-btn:hover {
+    background: #d8f2df;
+}
+
+.done-btn:hover {
+    background: #e5e9f1;
+}
+
+@media (max-width: 500px) {
+    .todos-container {
+        margin: 20px 10px;
+        padding: 15px;
+    }
+
+    .add-todo {
+        flex-direction: column;
+    }
+
+    .todo-item {
+        gap: 8px;
+        padding: 15px 10px;
+    }
+
+    .todo-item > div:last-child {
+        gap: 5px;
+    }
+
+    .todos-container button {
+        padding: 9px 11px;
+        font-size: 12px;
+    }
+}
